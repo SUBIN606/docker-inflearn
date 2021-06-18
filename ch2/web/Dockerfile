@@ -1,7 +1,6 @@
 # 1. node 설치
-FROM      ubuntu:20.04
-RUN       apt-get update
-RUN       DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs npm
+# 이미 node가 설치되어있는 baseImage로 변경
+FROM node:12
 
 # 2. 소스 복사
 COPY      . /usr/src/app
