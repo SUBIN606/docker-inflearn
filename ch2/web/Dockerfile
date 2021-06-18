@@ -1,9 +1,9 @@
 # 1. node 설치
 # 이미 node가 설치되어있는 baseImage로 변경
-FROM node:12
+FROM      node:12
 
 # 2. 패키지 우선 복사
-COPY ./package* /usr/src/app
+COPY      ./package* /usr/src/app/
 WORKDIR   /usr/src/app
 RUN       npm install
 
